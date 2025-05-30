@@ -1,0 +1,129 @@
+/* Overall Section */
+#intro {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container Flex */
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Left Column: Text */
+.intro-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  z-index: 1;
+}
+
+.hello {
+  font-size: 1.25rem;
+  font-weight: 300;
+  opacity: 0.85;
+}
+
+.introText {
+  font-size: 2.75rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.introName {
+  color: #38bdf8;
+}
+
+.introPara {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 600px;
+  opacity: 0.9;
+}
+
+/* Right Column: Image */
+.intro-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.intro-img:hover {
+      transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+.intro-img:active {
+  transform: scale(0.97);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styling */
+.hire-button {
+  background: linear-gradient(90deg, #38bdf8 0%, #0ea5e9 100%);
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hire-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.hire-button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .intro-left {
+    align-items: center;
+  }
+
+  .introText {
+    font-size: 2rem;
+  }
+
+  .introPara {
+    font-size: 0.95rem;
+  }
+
+  .hire-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
