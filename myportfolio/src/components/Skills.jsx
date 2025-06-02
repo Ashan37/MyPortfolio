@@ -4,7 +4,7 @@ import "../styles/skills.css";
 const Skills = () => {
   return (
     <section id="skills">
-      <span className="skillTitel">What I do</span>
+      <span className="skillTitle">What I do</span>
       <span className="skillDesc">
         I'm a Full Stack Developer skilled in building responsive, scalable web
         applications using technologies like React, Node.js, and MongoDB. I
