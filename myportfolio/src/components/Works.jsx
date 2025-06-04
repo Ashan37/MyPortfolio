@@ -14,6 +14,7 @@ const Works = () => {
         <img src="./src/assets/works/portfolioimg1.jpg" alt="work1" className="worksImg"/>
         <img src="./src/assets/works/portfolioimg1.jpg" alt="work1" className="worksImg"/>
       </div>
+      <button className="workBtn">See More</button>
     </section>
   );
 };
