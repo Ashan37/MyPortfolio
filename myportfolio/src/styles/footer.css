@@ -1,4 +1,4 @@
-.footer{
+.footer {
     width: 100vw;
     height: 4rem;
     background: rgb(40, 40, 40);
@@ -7,4 +7,24 @@
     justify-content: center;
     font-weight: 300;
     font-size: small;
+    padding: 0 1rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 0.85rem;
+        height: auto;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        font-size: 0.75rem;
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0.5rem;
+    }
 }
