@@ -3,9 +3,9 @@ import '../styles/footer.css'
 
 const Footer = () => {
   return (
-    <div>
-      
-    </div>
+   <footer className="footer">
+    Copyright &#169; 2025 Ashan Ekanayake. All right received.
+   </footer>
   )
 }
 
